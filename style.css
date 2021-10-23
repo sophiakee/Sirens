@@ -3,23 +3,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   display: flex;
-
-  /* This centers our sketch horizontally. */
   justify-content: center;
-
-  /* This centers our sketch vertically. */
   align-items: center;
 }
+
 canvas {
   display: block;
 }
 
 p {
   font-family: "Courier New", monospace;
-    display: block;
+  display: block;
   position: fixed;
   bottom: 1em;
   right: 1em;
