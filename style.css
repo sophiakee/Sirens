@@ -19,5 +19,6 @@ canvas {
 
 p {
     display: inline-block;
+  position: sticky;
   bottom: 0;
 }
