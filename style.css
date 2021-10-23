@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 canvas {
@@ -16,6 +17,7 @@ canvas {
 }
 
 p {
+  color: white;
   font-family: "Courier New", monospace;
   display: block;
   position: fixed;
