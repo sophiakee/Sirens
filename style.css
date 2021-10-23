@@ -18,7 +18,9 @@ canvas {
 }
 
 p {
-    display: inline-block;
-  position: sticky;
-  bottom: 0;
+  font-family: "Courier New", monospace;
+    display: block;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
 }
