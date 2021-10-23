@@ -16,3 +16,8 @@ body {
 canvas {
   display: block;
 }
+
+p {
+  display: block;
+  align-self: right;
+}
