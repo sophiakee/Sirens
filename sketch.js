@@ -352,9 +352,9 @@ function doubleClicked() {
     scene++;
     startMillis = millis();
   } else if (scene >= 5) {
-    scene = 2;
     score = 0;
     health = 5;
+    scene = 2;
     jellySprite.changeAnimation("swim");
   }
 }
