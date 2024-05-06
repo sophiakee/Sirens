@@ -208,6 +208,7 @@ function draw() {
     //because score and health would sometimes not properly reset upon restart
     score = 0;
     health = 5;
+    lifeSprite.animation.rewind();
   }
   function scene4() {
     var startTimer = 60000 + startMillis - millis();
