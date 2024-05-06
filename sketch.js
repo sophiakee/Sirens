@@ -205,6 +205,9 @@ function draw() {
     );
     text("And make it to the\nsurface by nightfall!", 960 / 1.5, 640 * 0.6);
     text("Double-click to play!", 960 / 2, 640 * 0.9);
+    //because score and health would sometimes not properly reset upon restart
+    score = 0;
+    health = 5;
   }
   function scene4() {
     var startTimer = 60000 + startMillis - millis();
