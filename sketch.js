@@ -266,7 +266,7 @@ function draw() {
       var enemy = enemies[j];
 
      if (startTimer > 58000) {
-       enemies.length == 0;
+       enemies.length = 0;
      }
       //Stopping strangers from going offscreen
       //If they try to go offscreen their movement trajectory will change to put them back onscreen.
