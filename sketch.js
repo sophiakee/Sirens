@@ -261,7 +261,7 @@ function draw() {
       }
     }
 
-  if (startTimer < 58000) {
+  if (startTimer < 55000) {
     for (var j = 0; j < 3; j++) {
       var enemy = enemies[j];
 
