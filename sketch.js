@@ -273,7 +273,7 @@ function draw() {
       if (enemy.position.x < 0) {
         enemies.splice(j, 1);
       }
-      if (startTimer < 59000 && enemies.length < 3) {
+      if (int(startTimer) < 59000 && enemies.length < 3) {
         var newPredator = createSprite(
           random([0, width]),
           random(height),
