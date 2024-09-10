@@ -261,10 +261,13 @@ function draw() {
       }
     }
 
-  if (startTimer < 55000) {
-    for (var j = 0; j < 3; j++) {
+
+   for (var j = 0; j < 3; j++) {
       var enemy = enemies[j];
 
+     if (startTimer > 58000) {
+       enemies.length == 0;
+     }
       //Stopping strangers from going offscreen
       //If they try to go offscreen their movement trajectory will change to put them back onscreen.
 
@@ -286,7 +289,7 @@ function draw() {
         newPredator.rotateToDirection = true;
         enemies.add(newPredator);
       }
-    }}
+    }
 
     //Gameplay Functions:
     //Gain points by eating prey
