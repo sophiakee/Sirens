@@ -97,12 +97,10 @@ function setup() {
   //setup predators
   for (var j = 0; j < 3; j++) {
     var newPredator = createSprite(random([0, width]), random(height), 144, 72);
-    if (startTimer > 0 && startTimer < 59000) {
-      enemies.add(newPredator);
-      newPredator.addAnimation("predatorswim", predator_sequence);
-      newPredator.setSpeed(random(1, 4), random([0, 180]));
-      newPredator.rotateToDirection = true;
-    }
+    enemies.add(newPredator);
+    newPredator.addAnimation("predatorswim", predator_sequence);
+    newPredator.setSpeed(random(1, 4), random([0, 180]));
+    newPredator.rotateToDirection = true;
   }
 
   //place jellyfish sprite
@@ -263,6 +261,7 @@ function draw() {
       }
     }
 
+  if (startTimer < 59000) {
     for (var j = 0; j < 3; j++) {
       var enemy = enemies[j];
 
@@ -287,7 +286,7 @@ function draw() {
         newPredator.rotateToDirection = true;
         enemies.add(newPredator);
       }
-    }
+    }}
 
     //Gameplay Functions:
     //Gain points by eating prey
