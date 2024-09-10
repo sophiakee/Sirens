@@ -33,7 +33,7 @@ var factNo;
 function preload() {
   //sound
   soundFormats("mp3", "ogg", "wav");
-  bgm = loadSound("sfx/atolla.mp3");
+  bgm = loadSound("sfx/atolla.wav");
 
   //starting, instructions and ending fullscreen images
   startCard = loadImage("assets/open_card_image.png");
@@ -273,7 +273,7 @@ function draw() {
       if (enemy.position.x < 0) {
         enemies.splice(j, 1);
       }
-      if (enemies.length < 3) {
+      if (enemies.length < 3 && startTimer < 59000) {
         var newPredator = createSprite(
           random([0, width]),
           random(height),
