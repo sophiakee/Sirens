@@ -7,6 +7,13 @@ Play it at [https://sophiakee.github.io/Sirens/](https://sophiakee.github.io/Sir
 
 # Changelog
 
+September 10th, 2024:
+- Changed background music file format to .WAV
+- Adjusted siphohophore spawns to not occur until at least one second into the game to prevent losing lives before the scene loads
+- Reduced volume of all audio
+
+---
+
 May 6th, 2024:
 - Fixed lives not resetting when restarting the game
 
