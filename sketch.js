@@ -97,10 +97,12 @@ function setup() {
   //setup predators
   for (var j = 0; j < 3; j++) {
     var newPredator = createSprite(random([0, width]), random(height), 144, 72);
-    enemies.add(newPredator);
-    newPredator.addAnimation("predatorswim", predator_sequence);
-    newPredator.setSpeed(random(1, 4), random([0, 180]));
-    newPredator.rotateToDirection = true;
+    if (startTimer > 0 && startTimer < 59000) {
+      enemies.add(newPredator);
+      newPredator.addAnimation("predatorswim", predator_sequence);
+      newPredator.setSpeed(random(1, 4), random([0, 180]));
+      newPredator.rotateToDirection = true;
+    }
   }
 
   //place jellyfish sprite
@@ -273,7 +275,7 @@ function draw() {
       if (enemy.position.x < 0) {
         enemies.splice(j, 1);
       }
-      if (int(startTimer) < 59000 && enemies.length < 3) {
+      if (enemies.length < 3) {
         var newPredator = createSprite(
           random([0, width]),
           random(height),
