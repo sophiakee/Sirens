@@ -7,6 +7,11 @@ Play it at [https://sophiakee.github.io/Sirens/](https://sophiakee.github.io/Sir
 
 # Changelog
 
+February 11th, 2026:
+- Updated p5.js from v1.1.9 to v1.11.11
+
+---
+
 September 10th, 2024:
 - Changed background music file format to .WAV
 - Adjusted siphohophore spawns to not occur until at least one second into the game to prevent losing lives before the scene loads
